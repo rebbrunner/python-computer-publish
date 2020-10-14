@@ -1,0 +1,7 @@
+(LOOP)
+@KBD
+D=M
+@LOOP
+D;JEQ
+@SCREEN
+M=-1
