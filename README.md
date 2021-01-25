@@ -26,7 +26,7 @@ Out of respect for the makers of this course and their desire to not have answer
 
 Instead, I intended on posting stubs for each chip along with notes describing each chip's functionality to serve as documentation and for future reference of chips that were challenging to implement (*cough* cpu *cough*) I will be pushing my screen, keyboard, and rom source code though, because these chips were not covered in nand2tetris.  I will also be compiling a binary executable of the final computer.
 
-The binaries have been compiled on Windows 10 Pro v1709 and Ubuntu 18.04.3.  The compiled binary includes an application that renders a line to the screen when a key is pressed.  The key must be pressed down until the command that checks the keyboard is executed again, which could take a few seconds.  Releasing the key beforehand will reset the keyboard back to its unpressed state and will not render anything to the screen.  A display driver is necessary to run the application - the app will crash otherwise.
+<!-- The binaries have been compiled on Windows 10 Pro v1709 and Ubuntu 18.04.3.  The compiled binary includes an application that renders a line to the screen when a key is pressed.  The key must be pressed down until the command that checks the keyboard is executed again, which could take a few seconds.  Releasing the key beforehand will reset the keyboard back to its unpressed state and will not render anything to the screen.  A display driver is necessary to run the application - the app will crash otherwise. -->
 
 Additionally:
 
