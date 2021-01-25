@@ -35,9 +35,13 @@ Additionally:
 - Likewise zero_to_false does the opposite
 - A simple program demonstrating input and output is included, pressing a key input down will render a line to the screen
 
+### Updated 1/24/2021 with VM translator (pt 1)
+
+Added an initial vm translator that operates on a stack architecture.  Implements arithmetic and logical operators, as well as push and pop operations across 8 virtual segments (architecture described in nand2tetris book).  Also added example vm program and its generated outputs.
+
 Current Workflow:
 
-Write a program in assembly_files using language specified in nand2tetris course -> call `assembly.py` -> copy translated program into ROM -> call computer.py
+Write a vm program -> call `vmtranslator.py filename` -> call `assembly.py filename` -> call `computer.py`
 
 ## Future Work
 

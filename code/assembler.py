@@ -1,3 +1,5 @@
+import argparse
+
 from hack_parser import Parser
 from translator import Code
 from symbol_table import SymbolTable
@@ -16,6 +18,11 @@ class Assembler:
         pass
 
 if __name__ == '__main__':
-    assembler = Assembler('./assembly_files/program.txt')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('filename')
+    args = parser.parse_args()
+    filename = args.filename
+
+    assembler = Assembler(filename)
     assembler.first_pass()
     assembler.second_pass()

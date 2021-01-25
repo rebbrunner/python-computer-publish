@@ -5,7 +5,7 @@ from ast import literal_eval
 
 class ROM32K:
     def __init__(self):
-        with open('C:/Users/Rebs/Documents/Dev/python-computer/code/rom_code/program.txt') as f:
+        with open('./programs/program.hack') as f:
             instructions = f.read().splitlines()
             instructions = [instruction for instruction in instructions if instruction.strip()]
 
