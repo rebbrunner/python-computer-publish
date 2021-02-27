@@ -39,6 +39,10 @@ Additionally:
 
 Added an initial vm translator that operates on a stack architecture.  Implements arithmetic and logical operators, as well as push and pop operations across 8 virtual segments (architecture described in nand2tetris book).  Also added example vm program and its generated outputs.
 
+### Updated 2/26/2021 with VM translator (pt 2) and Optimized RAM
+
+Added full implementation of vm translator including generation of bootstrap code, program flow, and call & return.  Added FAST_RAM and FAST_REGISTER.  FAST_RAM provides a significant boost to reading/writing from RAM, however, has not been implemented into builds yet.
+
 Current Workflow:
 
 Write a vm program -> call `vmtranslator.py filename` -> call `assembly.py filename` -> call `computer.py`

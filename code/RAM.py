@@ -51,3 +51,17 @@ class RAM16K:
     
     def write(self, i, load, address):
         pass
+
+class FAST_RAM:
+    def __init__(self):
+        pass
+    
+    def write(self, i, load, address):
+        pass
+
+class FAST_REGISTER:
+    def __init__(self):
+        pass
+    
+    def write(self, i, load):
+        pass

@@ -11,10 +11,16 @@ from vmcodewriter import CodeWriter
 # Categories are: ARITHMETIC/LOGICAL, PUSH, POP, FUNCTION, RETURN, IF, LABEL, GOTO, and CALL
 
 class Translator:
-    def __init__(self, filename):
+    def __init__(self):
+        pass
+    
+    def folder_or_filename(self, filename):
+        pass
+    
+    def process_file(self, filename):
         pass
 
-    def translate(self):
+    def translate(self, parser):
         pass
 
 if __name__ == '__main__':
@@ -23,5 +29,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     filename = args.filename
 
-    vm_translator = Translator(filename)
-    vm_translator.translate()
+    vm_translator = Translator()
+    vm_translator.folder_or_filename(filename)
