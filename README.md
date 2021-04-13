@@ -43,6 +43,10 @@ Added an initial vm translator that operates on a stack architecture.  Implement
 
 Added full implementation of vm translator including generation of bootstrap code, program flow, and call & return.  Added FAST_RAM and FAST_REGISTER.  FAST_RAM provides a significant boost to reading/writing from RAM, however, has not been implemented into builds yet.
 
+### Updated 4/13/2021 with Compiler Stage 1
+
+Added first stages of a compiler.  The current compiler consists of a tokenizer and parser but no code generation.  The compiler produces an xml file that contains the structure for a given input file's parse tree.
+
 Current Workflow:
 
 Write a vm program -> call `vmtranslator.py filename` -> call `assembly.py filename` -> call `computer.py`
