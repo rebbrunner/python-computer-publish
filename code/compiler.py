@@ -8,10 +8,19 @@ from syntax_analysis import Parser
 
 class Compiler:   
     def folder_or_filename(self, filename):
-        pass
+        if os.path.isfile(filename):
+            self.compile(filename)
+        elif os.path.isdir(filename):
+            for f in os.listdir(filename):
+                _, ext = os.path.splitext(f)
+                if ext == '.jack':
+                    self.compile(f'{filename}/{f}')
     
     def compile(self, fi):
-        pass
+        fname, ext = os.path.splitext(fi)
+        fo = fname + '.vm'
+        parser = Parser(fi, fo)
+        parser.recursive_descent()
 
 if __name__ == '__main__':
     i = './programs'

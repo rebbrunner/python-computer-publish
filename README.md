@@ -47,9 +47,13 @@ Added full implementation of vm translator including generation of bootstrap cod
 
 Added first stages of a compiler.  The current compiler consists of a tokenizer and parser but no code generation.  The compiler produces an xml file that contains the structure for a given input file's parse tree.
 
+### Updated 6/6/2021 with Compiler Stage 2
+
+Finished compiler with code generation.
+
 Current Workflow:
 
-Write a vm program -> call `vmtranslator.py filename` -> call `assembly.py filename` -> call `computer.py`
+Write a .jack program -> call `compiler.py` -> call `vmtranslator.py filename` -> call `assembly.py filename` -> call `computer.py`
 
 ## Future Work
 

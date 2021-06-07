@@ -1,13 +1,12 @@
 from tokenizer import Tokenizer
+from compiler_symbol_table import SymbolTable
+from codewriter import CodeWriter
+from string_map import StringMap
 
 # Syntax Analysis - Recursive descent parser
-# First stage - outputs to xml the parse tree
 
 class Parser:
     def __init__(self, fi, fo):
-        pass
-    
-    def write(self):
         pass
 
     def recursive_descent(self):
@@ -18,14 +17,14 @@ class Parser:
     
     def descend_into_class_var_dec(self):
         pass
-    
+
     def descend_into_subroutine_dec(self):
         pass
     
-    def descend_into_param_list(self):
+    def descend_into_param_list(self, subtype):
         pass
     
-    def descend_into_subroutine_body(self):
+    def descend_into_subroutine_body(self, name, subtype):
         pass
     
     def descend_into_var_dec(self):
