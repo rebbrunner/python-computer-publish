@@ -57,5 +57,5 @@ Write a .jack program -> call `compiler.py` -> call `vmtranslator.py filename` -
 
 ## Future Work
 
-- Create an OS (nand2tetris pt2)
-- Create a compiler (nand2tetris pt2)
+- [ ] Create an OS (nand2tetris pt2)
+- [x] Create a compiler (nand2tetris pt2)
